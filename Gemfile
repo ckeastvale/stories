@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 ruby "2.4.3"
 
-gem 'rails'#, '4.2.6'
-gem 'puma'#, '~> 2.15'
+gem 'rails'#, '5.1.4'
+#gem 'puma'#, '~> 2.15'
 gem 'pg'
 
 # Auth
@@ -51,10 +51,8 @@ gem 'slim'
 
 # Caching
 gem 'dalli'#, '~> 2.7'
-
-
 # Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
+ gem 'capistrano-rails', group: :development
 
 group :development, :test do
   gem 'byebug'
