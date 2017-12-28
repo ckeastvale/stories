@@ -1,9 +1,10 @@
 source 'https://rubygems.org'
 ruby "2.4.3"
 
-gem 'rails'#, '5.1.4'
+gem 'rails', '5.0.6'
 #gem 'puma'#, '~> 2.15'
-gem 'pg'
+#gem 'pg'
+gem 'mysql2'
 
 # Auth
 gem 'devise'#, '~> 3.5.3'
