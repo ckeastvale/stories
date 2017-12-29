@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 ruby "2.4.3"
 
-gem 'rails', '5.0.6'
+gem 'rails', '5.1.4'
 #gem 'puma'#, '~> 2.15'
 #gem 'pg'
 gem 'mysql2'
@@ -34,7 +34,7 @@ gem 'mini_magick'#, '3.8.0'
 gem 'fog'#,  '1.23.0'
 gem 'net-ssh'
 gem 'sdoc'#, '~> 0.4.0', group: :doc
-
+#
 # Load will_paginate before elasticsearch gems.
 gem 'will_paginate'#, '~> 3.1'
 
@@ -46,15 +46,15 @@ gem 'elasticsearch-rails'#, '~> 0.1.8'
 gem 'sidekiq'#, '~> 4.0'
 gem 'sinatra'#, require: false
 gem 'slim'
-# gem 'sidetiq', '~> 0.7.0'
+ gem 'sidetiq', '~> 0.7.0'
 
-#gem 'nokogiri', '~> 1.6'
-
+##gem 'nokogiri', '~> 1.6'
+#
 # Caching
 gem 'dalli'#, '~> 2.7'
 # Use Capistrano for deployment
  gem 'capistrano-rails', group: :development
-
+#
 group :development, :test do
   gem 'byebug'
   gem 'rspec-rails'#, '~> 3.4.0'
@@ -63,7 +63,7 @@ group :development, :test do
   gem 'bundler-audit'#, '~> 0.5.0'
   gem 'pry-rails'#, '~> 0.3.4'
 end
-
+#
 group :development do
   gem 'rails_best_practices'#, '~> 1.15'
   # Access an IRB console on exception pages or by using <%= console %> in views
@@ -71,10 +71,10 @@ group :development do
   gem 'spring'
   gem 'guard-rspec', require: false
   gem 'spring-commands-rspec'#, '~> 1.0'
-  gem 'rack-mini-profiler', '~> 0.9.8', require: false
+  gem 'rack-mini-profiler', require: false#, '~> 0.9.8'
   gem 'annotate'
   gem 'bullet'#, '~> 5.0'
-  gem 'quiet_assets'#, '~> 1.1'
+#  gem 'quiet_assets'#, '~> 1.1'
 end
 
 group :test do
